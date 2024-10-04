@@ -4,70 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
-    <script href="../bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <style>
-        .img{
+        *{
+            overflow-x: hidden;
+        }
+        .header{
             background-image: url(../Assets/workshop.avif);
             height: 130vh;
-            width: 120vw;
+            width: 110vw;
             background-size: cover;
-            overflow: hidden;
         }
-        .navbar{
-            font-size: 3vh;
+        .container-fluid{
             position: relative;
-            left: 130vh;
-        
+            left: 55vh;
         }
-        .navbar-brand{
+        #navbarNav{
+            gap: 15px;
             position: relative;
-            left: -90vh;
-            font-size: 3vh;
+            left: 80vh;
+
+        }
+        .nabar-brand{
+            position: relative;
+            right: 20%;
+        }
+        .text{
+            padding-left: 25%;
+            padding-top: 9%;
+        }
+        .text h1{
+            color: white;
+            font-size: 4.5rem;
+        }
+        .text p{
+            color: white;
+            width: 30vw;
+        }
+        .navbar-brand:hover{
+            background-color: white;
+        }
+        .nav-item:hover{
+            background-color: white;
+        }
+        .btn{
+            background-color: white;
             color: blue;
         }
-        .img h2{
-            font-size: 10vh;
-            position: relative;
-            top: 30vh;
-            left: 30vh;
-            color: white;
-        }
+        
+        
     </style>
 </head>
 <body>
-    <div class="img">
-        <h2>Fuel Mind Travel</h2>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="header">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Travel</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">services</a>
+                    <a class="nav-link active" href="#">Service</a>
                   </li>
-                 
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link  " aria-disabled="true">contact Us</a>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Contact us</a>
                   </li>
                 </ul>
-    
               </div>
             </div>
           </nav>
+          <div class="text">
+            <h1>
+                FUEL MINDk
+            </h1>
+            <h1>TRAVEL</h1>
+            <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto ullam quia at veritatis, quidem nihil!</p>
+            <button type="button" class="btn btn-outline" disabled>lets go now</button>
+          </div>
+          
+
     </div>
+    <div>
+        
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
