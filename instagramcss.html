@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insta Profile</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <style>
+      body {
+        background-color: blanchedalmond;
+      }
+
+      .main {
+        position: relative;
+        border: 1px solid black;
+        height: 485px;
+        width: 240px;
+        border-radius: 10px;
+        background-color: white;
+        /* align-items: center; */
+        /* justify-content: center; */
+      }
+      .main:hover {
+        background-color: rgb(218, 39, 101);
+      }
+      .black {
+        border: 1px solid rgb(5, 5, 5);
+        height: 20px;
+        width: 240px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: rgb(5, 5, 5);
+        /* margin: -1px;
+        margin-bottom: 0px; */
+      }
+      .m1 {
+        float: right;
+        /* margin-top: 2px; */
+        margin-right: 3px;
+        color: #f7f5f5;
+      }
+      .m12 {
+        margin-top: 2px;
+        margin-right: 3px;
+        color: #f7f5f5;
+      }
+      .m2 {
+        /* margin-top: 2px; */
+        float: left;
+        margin-left: 6px;
+        color: #f7f5f5;
+      }
+      .m21 {
+        color: #f7f5f5;
+        /* margin-top: 2px; */
+        margin-left: 6px;
+      }
+      .m3 {
+        height: 30px;
+        width: 230px;
+        display: flex;
+        align-items: center;
+      }
+      .ci {
+        height: 40px;
+        width: 40px;
+        border: 2px solid #cc2366;
+        border-radius: 50%;
+        background-position: center center;
+        background-size: cover;
+        background-image: url(./html/prabhas.avif);
+      }
+      .m4 {
+        display: grid;
+        grid-template-areas:
+          "area1 area2 area3 area4"
+          "area1 area2 area3 area4"
+          "area1 area5 area6 area7"
+          "area1 area5 area6 area7";
+      }
+      .item1 {
+        grid-area: area1;
+      }
+      .item2 {
+        grid-area: area2;
+      }
+      .item3 {
+        grid-area: area3;
+      }
+      .item4 {
+        grid-area: area4;
+      }
+      .item5 {
+        grid-area: area5;
+      }
+      .item6 {
+        grid-area: area6;
+      }
+      .item7 {
+        grid-area: area7;
+      }
+      .m5 {
+        margin-top: 70px;
+        width: 240px;
+        height: 25px;
+
+        display: flex;
+        padding: -10px;
+        column-gap: 10px;
+        row-gap: 10px;
+        align-items: center;
+        justify-content: space-evenly;
+        /* background-color: rgb(251, 251, 251); */
+      }
+      .itt {
+        background-color: rgb(124, 166, 255);
+        height: 15px;
+        text-align: center;
+        padding: 2%;
+        border-radius: 15%;
+      }
+      .main_radius {
+        height: 5vh;
+        position:absolute;
+       
+        transform: translateY(5px);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 1px;
+      }
+      .item_radius {
+        height: 5vh;
+        /* width: 6vw; */
+        border: 1px solid black;
+        border-radius: 50%;
+      }
+      .grid1 {
+        height: 33vh;
+        width: 100%;
+        border: 1px solid;
+        transform: translateY(70px);
+        border-radius: 5%;
+        overflow-x: scroll;
+        display: grid;
+        grid-template-areas:
+          "area1 area2 area3"
+          "area4 area5 area6"
+          "area7 area8 area9 ";
+        justify-content: space-around;
+      }
+      .grid_img {
+        height: 10vh;
+        /* width: 10vw; */
+      }
+      .img1 {
+        grid-area: area1;
+      }
+      .img2 {
+        grid-area: area2;
+      }
+      .img3 {
+        grid-area: area3;
+      }
+      .img4 {
+        grid-area: area4;
+      }
+      .img5 {
+        grid-area: area5;
+      }
+      .img6 {
+        grid-area: area6;
+      }
+      .img7 {
+        grid-area: area7;
+      }
+      .img8 {
+        grid-area: area8;
+      }
+      .img9 {
+        grid-area: area9;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="background-color: pink">
+      <marquee
+        ><ion-icon name="logo-instagram"></ion-icon>Instagram<ion-icon
+          name="logo-instagram"
+        ></ion-icon
+      ></marquee>
+    </h1>
+    <center>
+      <div class="main">
+        <div class="black">
+          <div class="m1">
+            <ion-icon class="m12" name="headset"></ion-icon
+            ><ion-icon class="m12" name="wifi-outline"></ion-icon
+            ><ion-icon name="battery-charging-outline"></ion-icon>
+          </div>
+
+          <div class="m2">
+            <ion-icon name="airplane"></ion-icon
+            ><ion-icon class="m21" name="notifications-off-circle"></ion-icon>
+          </div>
+        </div>
+        <div class="m3">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+          <p
+            style="
+              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                sans-serif;
+              font-size: small;
+            "
+          >
+            nayeem_n09
+          </p>
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+          <ion-icon name="ellipsis-horizontal"></ion-icon>
+        </div>
+        <div class="m4">
+          <div class="item1"><div class="ci"></div></div>
+          <div class="item2">
+            <strong><center>9</center></strong>
+          </div>
+          <div class="item3">
+            <strong><center>700</center></strong>
+          </div>
+          <div class="item4">
+            <strong><center>500</center></strong>
+          </div>
+          <div class="item5"><b>posts</b></div>
+          <div class="item6"><b>followers</b></div>
+          <div class="item7"><b>following</b></div>
+        </div>
+        <pre
+          style="
+            float: left;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+              sans-serif;
+            font-size: x-small;
+          "
+        >
+&emsp;<b>Nayeem</b>&#128526;
+&#128521;Allah knows best&#128513;
+&#128516;My strength is my family&#128516;
+&#127775;always and forver&#129311;</pre
+        >
+        <div class="m5">
+          <div
+            style="
+              float: left;
+              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                sans-serif;
+              font-size: small;
+            "
+            class="itt"
+          >
+            &emsp;Follow&emsp;
+          </div>
+          <div
+            style="
+              float: left;
+              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                sans-serif;
+              font-size: small;
+            "
+            class="itt"
+          >
+            &emsp;Message&emsp;
+          </div>
+          <div style="float: left" class="itt">
+            <ion-icon name="person-add-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="main_radius">
+          <div><img src="https://media.istockphoto.com/id/157579910/photo/the-beach.jpg?s=612x612&w=0&k=20&c=aMk67AmzIVD_S1Nibww8ytUdyub2ck3HNQ3uTvuPWPI=" class="item_radius" />goa</div>
+          <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY1cibpFs-_skVALcp59UB5v5fCBwxS3ZyZA&s" class="item_radius" />charminar</div>
+          <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtjPSGHPP6rJxOgz-b5eMJt0dQTxtjchA6CQ&s" class="item_radius" />village</div>
+          
+        
+           
+        </div>
+        <div class="grid1">
+          <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtjPSGHPP6rJxOgz-b5eMJt0dQTxtjchA6CQ&s" class="grid_img img1" /></div>
+          <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsULqCy41TcR6rECUinoAuRQhaJsgcIjvtmw&s" class="grid_img img2" /></div>
+          <div><img src="https://media-cdn.tripadvisor.com/media/photo-s/11/f4/ff/11/charminar.jpg" class="grid_img img3" /></div>
+          <div><img src="https://cdn.pixabay.com/photo/2017/09/20/06/27/bridge-2767545_640.jpg" class="grid_img img4" /></div>
+          <div><img src="https://www.shutterstock.com/image-photo/enjoying-breathtaking-beauty-natures-masterpiece-260nw-2396208071.jpg" class="grid_img img5" /></div>
+          <div><img src="https://www.shutterstock.com/image-photo/new-delhi-india-march-2019-260nw-1382845190.jpg" class="grid_img img6" /></div>
+          <div><img src="https://cdn.pixabay.com/photo/2020/02/02/17/23/travel-4813654_640.jpg" class="grid_img img7" /></div>
+          <div><img src="https://media.istockphoto.com/id/517364023/photo/lotus-temple.jpg?s=612x612&w=0&k=20&c=Ap7wHtvS2nWcIyUsEDhThIln1VOcWlm50dVv7GYcBbI=" class="grid_img img8" /></div>
+          <div><img src="https://www.shutterstock.com/image-photo/enjoying-breathtaking-beauty-natures-masterpiece-260nw-2396208071.jpg" class="grid_img img9" /></div>
+        </div>
+      </div>
+    </center>
+  </body>
+</html>
